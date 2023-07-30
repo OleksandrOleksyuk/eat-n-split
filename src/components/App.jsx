@@ -49,9 +49,7 @@ export default function App() {
 
     setFriends((friends) =>
       friends.map((friend) =>
-        friend.id === selectedFriend.id
-          ? { ...friend, balance: friend.balance + value }
-          : friend
+        friend.id === selectedFriend.id ? { ...friend, balance: friend.balance + value } : friend
       )
     );
   }
@@ -64,14 +62,13 @@ export default function App() {
           onSelection={handleSelection}
         />
         {showFormFriend && <FormAddFriend onAddFriend={handleAddFriend} />}
-        <Button onClick={handleShowFormFriend}>
-          {showFormFriend ? "Close" : "Add Friend"}
-        </Button>
+        <Button onClick={handleShowFormFriend}>{showFormFriend ? "Close" : "Add Friend"}</Button>
       </div>
       {selectedFriend && (
         <FormSplittBill
           selectedFriend={selectedFriend}
           onSplitBill={handleSplitBill}
+          key={selectedFriend.id}
         />
       )}
     </div>
