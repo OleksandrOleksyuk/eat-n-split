@@ -8,7 +8,7 @@ Eat-n-Split is a small React project I developed while following a React course,
 
 ## Getting Started
 
-To explore the Eat-n-Split application, simply click on this link: [Eat-n-Split App](eat-n-split-reactjs-course.netlify.app)
+To explore the Eat-n-Split application, simply click on this link: [Eat-n-Split App](https://eat-n-split-reactjs-course.netlify.app/)
 
 If you prefer to run the application locally, follow these steps:
 
